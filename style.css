@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-size: 1rem;
+  --line-height: 1.5;
+  --primary-background: #f3f4f6;
+  --secondary-background: #e5e7eb;
+  --third-background: #ffffff;
+  --line-color: #d2d5da;
+  --primary-text: #1d1d1f;
+  --secondary-text: #394150;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-text);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-container {
+  background-image: url("./resources/background-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin: 2.5rem;
+  text-align: center;
+}
+.title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.title h1 {
+  color: var(--third-background);
+}
+.sub-title {
+  background-color: var(--primary-text);
+  color: var(--third-background);
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.content {
+  width: 95%;
+  margin-left: 2.5rem;
+  margin-right: 0.625rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  background-color: var(--secondary-background);
+  border-radius: 1rem;
+}
+
+.detail-checkout {
+  margin: 2.5rem;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+
+.title-item {
+  font-size: 1rem;
+}
+.price {
+  float: right;
+}
+
+.item-details {
+  margin-left: 1rem;
+}
+
+.q-item {
+  margin-top: 1.5rem;
+}
+
+.close {
+  float: right;
+}
+.img-item {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--line-color);
+  background-color: var(--primary-background);
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--line-color);
+  margin: 1rem 0;
+}
+
+.coupon {
+  align-items: center;
+}
+
+.coupon form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.coupon input {
+  width: 74%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--third-background);
+  color: var(--primary-text);
+  padding: 1rem;
+}
+.coupon-btn {
+  width: 24%;
+  border: none;
+}
+
+.total-price {
+  margin: 1rem 0;
+}
+
+.text-price {
+  align-items: center;
+}
+
+.text-price h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.container-form {
+  border-radius: 0rem 1rem 1rem 0rem;
+  background-color: var(--third-background);
+}
+
+.form-details {
+  margin: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+.title-form {
+  font-size: 1rem;
+}
+
+.form-contact {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contact label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-contact input,
+select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-background);
+  margin-bottom: 1rem;
+}
+
+.half-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.half-form label {
+  display: inline-block;
+}
+.userCountry {
+  width: 45%;
+}
+.grey-text {
+  color: var(--secondary-text);
+}
+.btn-submit {
+  background-color: var(--primary-text);
+  color: var(--third-background);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

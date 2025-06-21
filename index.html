@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="header">
+        <div class="title">
+          <h1>Checkout</h1>
+          <span class="sub-title">3 ITEMS</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container-checkout">
+          <div class="detail-checkout">
+            <div class="items-list">
+              <div class="item">
+                <div class="img-item">
+                  <img src="./resources/Gold.png" alt="iphone-gold" />
+                </div>
+
+                <div class="item-details">
+                  <h2 class="title-item">
+                    iPhone 12 Pro <span class="price">$999.00</span>
+                  </h2>
+
+                  <p class="desc-item grey-text">Golden</p>
+                  <p class="q-item grey-text">
+                    x 1
+                    <img
+                      src="./resources/close-icon.svg"
+                      alt="close-icon"
+                      class="close"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-item">
+                  <img src="./resources/Apple-watch.png" alt="apple-watch" />
+                </div>
+                <div class="item-details">
+                  <h2 class="title-item">
+                    Apple Watch <span class="price">$399.00</span>
+                  </h2>
+                  <p class="desc-item grey-text">Blue</p>
+                  <p class="q-item grey-text">
+                    x 1
+                    <img
+                      src="./resources/close-icon.svg"
+                      alt="close-icon"
+                      class="close"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-item">
+                  <img src="./resources/iMac.png" alt="iMac" />
+                </div>
+
+                <div class="item-details">
+                  <h2 class="title-item">
+                    iMac <span class="price">$1199.00</span>
+                  </h2>
+                  <p class="desc-item grey-text">Green</p>
+                  <p class="q-item grey-text">
+                    x 1
+                    <img
+                      src="./resources/close-icon.svg"
+                      alt="close-icon"
+                      class="close"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="coupon">
+              <form>
+                <input
+                  type="text"
+                  class="coupon-input"
+                  placeholder="Enter coupon code"
+                />
+                <button type="submit" class="coupon-btn btn-submit">
+                  Apply Coupon
+                </button>
+              </form>
+            </div>
+            <div class="total-price">
+              <div class="text-price">
+                <h3 class="grey-text">
+                  Sub Total <span class="price grey-text">$2597.00</span>
+                </h3>
+                <h3 class="grey-text">
+                  Tax <span class="price grey-text">$623.28</span>
+                </h3>
+                <h3>Total <span class="price">$3220.28</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-form">
+          <div class="form-details">
+            <h2 class="title-form">Contact Information</h2>
+            <form class="form-contact">
+              <label for="userName" class="grey-text">First & Last name</label>
+              <input
+                type="text"
+                name="userName"
+                placeholder="Enter first & last name"
+              />
+
+              <label for="userEmail" class="grey-text">Email Address</label>
+              <input
+                type="email"
+                name="userEmail"
+                placeholder="Enter email address"
+              />
+              <div class="half-form">
+                <div class="userCountry">
+                  <label for="userCountry" class="grey-text">Country</label>
+                  <select name="userCountry" id="userCountry">
+                    <option value="finland">Finland</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="south-kr">South Korea</option>
+                    <option value="Switz">Switzerland</option>
+                  </select>
+                </div>
+                <div class="post-code">
+                  <label for="post-code" class="grey-text" id="post-code"
+                    >Postal Code</label
+                  >
+                  <input
+                    type="number"
+                    name="post-code"
+                    placeholder="00270"
+                    id="post-code"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="form-btn btn-submit">
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
