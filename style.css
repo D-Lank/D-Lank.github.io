@@ -44,10 +44,10 @@ main {
 }
 
 .main-container {
-  background-image: url("./resources/background-image.png");
+  background-image: url("./resources/background-image@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: cover;
+  background-position: top;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ main {
 }
 
 .content {
-  width: 95%;
+  width: 97%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   background-color: var(--secondary-background);
@@ -84,7 +84,7 @@ main {
 }
 
 .detail-checkout {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .items-list {
